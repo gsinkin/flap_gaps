@@ -1,6 +1,6 @@
 function bind_echo_form() {
   $("#echo-form").submit(function() {
-    $.post("http://localhost:5000/retort/echo",
+    $.post("/retort/echo",
            $(this).serialize(), function(data) {
              $("#response").text(data.result);
            }).fail(function(data) {
