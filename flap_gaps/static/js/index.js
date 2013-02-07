@@ -1,6 +1,6 @@
 function bind_echo_form() {
   $("#echo-form").submit(function() {
-    $.post("/retort/echo",
+    $.post("https://flap-gaps.herokuapp.com/retort/echo",
            $(this).serialize(), function(data) {
              $("#response").text(data.result);
            }).fail(function(data) {
