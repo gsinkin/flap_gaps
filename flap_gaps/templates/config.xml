@@ -18,7 +18,6 @@
   </author>
 
   <preference name="permissions" value="none"/>
-
   <access origin="https://flap-gaps.herokuapp.com" />
 
 </widget>
